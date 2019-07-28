@@ -46,11 +46,15 @@ public class Starter {
                 //System.out.println("thread-1 " + bankAccount.getBalance());
             }
         });
-        //thread1.start();
+        thread1.start();
+        System.out.println(thread1.getName() + "  " +bankAccount.getBalance());
+
         thread1.run();
         System.out.println(thread1.getName() + "  " +bankAccount.getBalance());
 
-        //thread2.start();
+        thread2.start();
+        System.out.println(thread2.getName() + "  " +bankAccount.getBalance());
+
         thread2.run();
         System.out.println(thread2.getName() + "  " +bankAccount.getBalance());
 

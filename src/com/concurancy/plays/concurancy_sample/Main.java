@@ -18,14 +18,19 @@ public class Main {
         });
 
         // differance start and call methods
-        MyThread myThread = new MyThread();
-        System.out.println("wee call start() and run in the background");
-        myThread.start();
+//        MyThread myThread = new MyThread();
+//        System.out.println("wee call start() and run in the background");
+//        myThread.start();
 
         thread.start(); // start method create and run() is executed
        // thread.start();  can not be call twice
         //thread.run();
-        thread.run();
+        //thread.run();
+        for (int i = 0; i <5; i++) {
+            System.out.println("MT " + i +" "+ thread.getState());
+
+        }
+        System.out.println("MT stop");
 
 
     }
